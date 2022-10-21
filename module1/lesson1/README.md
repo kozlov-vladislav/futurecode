@@ -97,7 +97,7 @@ int main() {
 #include <iostream>
 
 int main() {
-    int a = 13;
+    int a = 15;
     int b = 4;
     std::cout << a / b << "\n"; // Будет 3, а не 3.75
     return 0;
@@ -143,8 +143,8 @@ int main() {
     int b;
     std::cin >> a;
     std::cin >> b;
-    std::cout << a / b << "\n" // Округление вниз
-    std::cout << (a + b - 1) / b // Округление вверх
+    std::cout << a / b << "\n"; // Округление вниз
+    std::cout << (a + b - 1) / b; // Округление вверх
     return 0;
 }
 ```
@@ -348,8 +348,8 @@ int main() {
 #include <iomanip>
 
 int main() {
-	std::cout << std::setprecision(20); // Делает 20 знаков после запятой
-	std::cout << std::fixed;
+    std::cout << std::setprecision(20); // Делает 20 знаков после запятой
+    std::cout << std::fixed;
     double a = 10;
     double b = a / 3;
     std::cout << b << "\n"; // У меня вывело 3.33333333333333348136
@@ -366,7 +366,7 @@ https://www.log2base2.com/storage/how-float-values-are-stored-in-memory.html
 #include <iostream>
 
 int main() {
-	double a = 1 / 2;
+    double a = 1 / 2;
     double b = 1.0 / 2;
     std::cout << a << " " << b << "\n"; // Выведет 0 0.5
     return 0;
@@ -374,13 +374,28 @@ int main() {
 ```
 Это отдельная тема на приведение типов, но стоит упомянуть.
 
+Также рассказать про библиотеку cmath
+
+```c++
+#include <iostream>
+#include <cmath>
+
+int main() {
+    double b = -2.0 / 3;
+    std::abs(b);
+    std::floor(b);
+    std::ceil(b);
+    std::sqrt(b * b)
+    return 0;
+}
+```
 __Константы__
 Рассказать про keyword `const`
 
-Константы обычно не хранятся в памяти(это не всегда так), компилятор подставляет их значения в код.
+Константы обычно не хранятся в памяти(но это не всегда так), компилятор подставляет их значения в код.
 ```c++
 int main() {
-	const int A = 15;
+    const int A = 15;
     int a = 2 * A;
     a *= 10;
     A *= 10; // CE - A объявлена как константа
