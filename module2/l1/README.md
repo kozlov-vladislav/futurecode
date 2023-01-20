@@ -5,4 +5,6 @@
 
 [Тесты](list.md)
 
+[Задачи](problems/README.md)
+
 [Конспект]()
