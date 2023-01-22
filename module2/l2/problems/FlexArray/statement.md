@@ -42,7 +42,7 @@ int main() {
     auto prod = flex * 2;
 
     for (int i = 0; i < prod.Size(); ++i) {
-        std::cout << prid.at(i) << " ";
+        std::cout << prod.at(i) << " ";
     }
     std::cout << "\n";
     // Должен вывести 1 2 3 1 2 3
