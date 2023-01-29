@@ -681,7 +681,7 @@ void Insert(unsigned int atIndex, const T& element) {
 Еще есть метод `erase(итератор)`, который удаляет элемент по итератору, реализация и время работы у него аналогичные.
 
 ```c++
-void Insert(unsigned int atIndex) {
+void Erase(unsigned int atIndex) {
     for (unsigned int i = atIndex + 1; i < size; ++i) {
         buffer[i - 1] = buffer[i];
     }
