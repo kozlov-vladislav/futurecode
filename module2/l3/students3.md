@@ -676,8 +676,8 @@ void Insert(unsigned int atIndex, const T& element) {
     if (size == capacity) {
         SetNewCapacity(2 * capacity);
     }
-    for (unsigned int i = size - 1; i >= atIndex; --i) {
-        buffer[i + 1] = buffer[i];
+    for (unsigned int i = size; i >= atIndex + 1; --i) {
+        buffer[i] = buffer[i - 1];
     }
     buffer[atIndex] = element;
     ++size;
