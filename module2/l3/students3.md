@@ -326,6 +326,9 @@ Vector() {
 
 Vector(unsigned int size) : size(size), capacity(2 * size) {
     buffer = new T[capacity];
+    for (unsigned int i = 0; i < size; ++i) {
+            buffer[i] = T();
+    }
 }
 
 Vector(unsigned int size, const T& defaultValue) : size(size), capacity(2 * size) {
@@ -407,6 +410,9 @@ public:
 
     Vector(unsigned int size) : size(size), capacity(2 * size) {
         buffer = new T[capacity];
+        for (unsigned int i = 0; i < size; ++i) {
+            buffer[i] = T();
+        }
     }
 
     Vector(unsigned int size, const T& defaultValue) : size(size), capacity(2 * size) {
