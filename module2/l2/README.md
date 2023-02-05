@@ -3,7 +3,7 @@
 
 [План](2.md)
 
-[Задачи](problems/README.md)
+[Задачи](problems/)
 
 [Тесты](list.md)
 
