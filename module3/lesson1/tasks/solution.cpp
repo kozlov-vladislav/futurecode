@@ -89,6 +89,9 @@ public:
         if (!HasRole(sender, MODERATOR_ROLE)) {
             return MakeFailedResponse("only moderator can ban");
         }
+        if (!HasRole(user, USER_ROLE)) {
+            return MakeFailedResponse("not registered");
+        }
         if (HasRole(user, BANNED_ROLE)) {
             return MakeFailedResponse("already banned");
         }
@@ -98,6 +101,9 @@ public:
     ResposeData UnBanUser(int sender, int user)  {
         if (!HasRole(sender, MODERATOR_ROLE)) {
             return MakeFailedResponse("only moderator can unban");
+        }
+        if (!HasRole(user, USER_ROLE)) {
+            return MakeFailedResponse("not registered");
         }
         if (!HasRole(user, BANNED_ROLE)) {
             return MakeFailedResponse("already unbanned");
