@@ -16,9 +16,10 @@
 
 Какие хэши точно написаны НЕправильно?
 
-1
+1:
 
 ```c++
+
 class MyHash {
 public:
     size_t operator()(const std::pair<int, int>& value) const {
@@ -27,11 +28,13 @@ public:
         return (a << 32) | b;
     }
 };
+
 ```
 
-2
+2:
 
 ```c++
+
 class MyHash {
 public:
     size_t operator(const std::pair<int, int>& value) const {
@@ -40,11 +43,13 @@ public:
         return (a << 32) | b;
     }
 };
+
 ```
 
-3
+3:
 
 ```c++
+
 class MyHash {
 public:
     size_t operator()(const std::pair<int, int>& value) const {
@@ -52,6 +57,7 @@ public:
         return (a + b) * rnd();
     }
 };
+
 ```
 
 1
