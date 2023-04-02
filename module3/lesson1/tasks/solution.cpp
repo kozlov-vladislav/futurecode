@@ -17,6 +17,7 @@ public:
         return usersList.count(id) == 1;
     }
 
+    // @dev Этот метод позволяет дважды выдать роль, исправить при необходимости
     bool GrantRole(int id, const std::string& roleName) { // bool - успешно ли
         if (!RoleExists(roleName)) { // Такой роли нет
             return false;
