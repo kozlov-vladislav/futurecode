@@ -16,7 +16,7 @@ class Dog : public Animal {
 class Cat : public Animal {
 };
 
-```c++
+
 Animal* animal = new Dog();
 // статический тип animal - Animal*
 // динамический тип animal - Dog*
