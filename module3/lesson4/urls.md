@@ -1,0 +1,5 @@
+[Exceptions](https://tproger.ru/articles/iskljuchenija-v-cpp-tipy-sintaksis-i-obrabotka/)
+[Why inherit from std::exception](https://softwareengineering.stackexchange.com/questions/305641/should-one-derive-inherit-from-stdexception)
+[RTTI2](https://www.codeguru.com/cplusplus/what-is-runtime-type-identification-rtti-in-c/)
+[Еще статья про касты(маленькая, но разумные вещи в ней есть)](https://habr.com/ru/post/347786/)
+[Полиморфизм(нас интересует часть с наследованием и виртуальными функциями)](https://www.geeksforgeeks.org/cpp-polymorphism/)
