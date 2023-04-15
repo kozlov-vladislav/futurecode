@@ -1,10 +1,10 @@
 # Исключения и умные указатели
 ```
-Понятие исключений
-Синтаксис throw и try-catch
-Понятие умных указателей
-std::unique_ptr и std::make_unique
-std::shared_ptr и std::make_shared
+Потоки
+Race condition
+Mutex
+Атомарные операции
+Future
 ```
 
 [Полезные ссылки](urls.md)
