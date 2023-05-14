@@ -62,8 +62,6 @@ int main() {
     delete component;
     delete decoratorA;
     delete decoratorB;
-
-    return 0;
 }
 ```
 
@@ -131,8 +129,6 @@ int main() {
 
     delete real_subject;
     delete proxy;
-
-    return 0;
 }
 ```
 
@@ -183,11 +179,8 @@ int main() {
 
     delete adaptee;
     delete target;
-
-    return 0;
 }
 ```
-
 
 В данном примере класс `Target` представляет целевой интерфейс, который должен быть использован в клиентском коде. Класс `Adaptee` представляет существующий класс, который имеет свой собственный интерфейс. Класс `Adapter` оборачивает объект класса `Adaptee` и предоставляет новый интерфейс `Target`.
 
@@ -212,7 +205,6 @@ Adaptee: Specific request.
 # Мост
 
 Мост (Bridge) - это структурный паттерн проектирования, который разделяет абстракцию и реализацию таким образом, чтобы они могли изменяться независимо друг от друга. Мост используется, когда нужно связать классы с разными абстракциями, такими как различные операционные системы или базы данных.
-
 
 ```c++
 #include <iostream>
@@ -270,8 +262,6 @@ int main() {
     delete implementorB;
     delete abstractionA;
     delete abstractionB;
-
-    return 0;
 }
 ```
 
