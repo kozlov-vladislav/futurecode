@@ -1,8 +1,8 @@
-# SFML
+# Git
 
 
 [Полезные ссылки](urls.md)
 
-[Методичка, она же и конспект](students.md)
+[Инструкция](students.md)
 
 [Тесты](tests.md)
