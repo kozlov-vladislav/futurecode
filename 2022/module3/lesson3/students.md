@@ -51,18 +51,21 @@ if (n >= 0) {
 
 ```c++
 class Animal {
+public:
     void MakeSound() {
         std::cout << "I am an unknown animal(\n";
     }
 };
 
 class Dog : public Animal {
+public:
     void MakeSound() {
         std::cout << "Dog(\n";
     }
 };
 
 class Cat : public Animal {
+public:
     void MakeSound() {
         std::cout << "Cat(\n";
     }
