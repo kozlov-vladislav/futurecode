@@ -176,7 +176,6 @@ operator delete[]
 слово this
 Ссылки и классы
 Модификатор доступа const
-const_cast
 ```
 
 ## [Перегрузка операторов](./module3/4.md)
